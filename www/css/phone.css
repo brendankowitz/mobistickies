@@ -1,0 +1,210 @@
+﻿@media all and (orientation:portrait) {
+    @-ms-viewport {
+        width:320px;
+        user-zoom: fixed;
+        max-zoom: 1;
+        min-zoom: 1;
+    }
+}
+
+@media all and (orientation:landscape) {
+    @-ms-viewport {
+        width:480px;
+        user-zoom: fixed;
+        max-zoom: 1;
+        min-zoom: 1;
+    }
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 11pt;
+    font-family: "Segoe WP";
+    letter-spacing: 0.02em;
+    background-color: #000000;
+    color: #ffffff;
+    -ms-touch-action:none;
+    
+}
+
+.reveal {
+    overflow: hidden;
+}
+
+#page-title {
+    font-size: 24pt;
+}
+
+h2 {
+    -ms-touch-action:none;
+}
+
+.homepage section[role=main] {
+   
+}
+
+.area {
+    position: relative;
+}
+
+div.draggy {
+    position: absolute;
+    left: 0;
+    top: 0; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+    min-width: 100px;
+    border-radius: 1px;
+    padding: 8px;
+    min-height: 50px;
+}
+
+div.draggy > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 50px;
+    display: block;
+    text-align: left;
+}
+
+​ .colour1a {
+}
+
+ .colour1 {
+    background: #EDE574;
+    border: 2px solid darkkhaki;
+     color: #000;
+}
+
+
+.colour2 {
+    background: #F65754;
+    border: 2px solid #F9004E;
+}
+
+.colour3 {
+    background: #427E78;
+    border: 2px solid #2D5652;
+}
+
+#changeColourBar {
+    position: absolute;
+    width: 120px;
+    z-index: 99999;
+}
+
+    #changeColourBar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        #changeColourBar ul li {
+            float: left;
+            margin: 0 0.15em;
+        }
+
+        #changeColourBar ul li a {
+            display: block;
+            width: 15px;
+            height: 15px;
+        }
+
+        #changeColourBar ul li a span {
+            display: none;
+        }
+
+#editBar {
+    width: 20px;
+    position: absolute;
+    z-index: 99999;
+}
+
+    #editBar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 99999;
+    }
+
+        #editBar ul li {
+            margin: 0 0.15em;
+            width: 24px;
+            height: 24px;
+        }
+
+        #editBar li.edit a {
+            width: 24px;
+            height: 24px;
+            background: url("../images/UI_237.png");
+            display: block;
+        }
+
+            #editBar li.edit a span {
+                display: none;
+            }
+
+        #editBar li.delete a {
+            width: 24px;
+            height: 24px;
+            background: url("../images/UI_174.png");
+            display: block;
+        }
+
+            #editBar li.delete a span {
+                display: none;
+            }
+
+div.draggy span {
+	width: 77px;
+	height: 27px;
+	display: block;
+	position: absolute;
+	top: -13px;
+	left: calc(50% - 30px);
+	background: url("../images/tape_smaller.png") no-repeat;
+}
+
+/*********************************************
+ * ZOOM TRANSITION
+ *********************************************/
+
+.reveal.zoom .slides>section.past {
+	opacity: 0;
+	visibility: hidden;
+
+	-webkit-transform: scale(16);
+	   -moz-transform: scale(16);
+	    -ms-transform: scale(16);
+	     -o-transform: scale(16);
+	        transform: scale(16);
+}
+.reveal.zoom .slides>section.future {
+	opacity: 0;
+	visibility: hidden;
+
+	-webkit-transform: scale(0.2);
+	   -moz-transform: scale(0.2);
+	    -ms-transform: scale(0.2);
+	     -o-transform: scale(0.2);
+	        transform: scale(0.2);
+}
+
+.reveal.zoom .slides>section>section.past {
+	-webkit-transform: translate(0, -150%);
+	   -moz-transform: translate(0, -150%);
+	    -ms-transform: translate(0, -150%);
+	     -o-transform: translate(0, -150%);
+	        transform: translate(0, -150%);
+}
+.reveal.zoom .slides>section>section.future {
+	-webkit-transform: translate(0, 150%);
+	   -moz-transform: translate(0, 150%);
+	    -ms-transform: translate(0, 150%);
+	     -o-transform: translate(0, 150%);
+	        transform: translate(0, 150%);

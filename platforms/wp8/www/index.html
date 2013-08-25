@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/reveal.css" />
+    <link rel="stylesheet" type="text/css" href="css/phone.css" />
+    <title>Windows Phone</title>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <div class="homepage">
+                    <div>
+                        <h2>Sticky Notes</h2>
+
+                    </div>
+                    <section role="main" class="area">
+                        <div id="changeColourBar" style="position: absolute; display: none;">
+                            <ul>
+                                <li class="colour1"><a href="#"><span></span></a></li>
+                                <li class="colour2"><a href="#"><span></span></a></li>
+                                <li class="colour3"><a href="#"><span></span></a></li>
+                            </ul>
+                        </div>
+                        <div id="editBar" style="display: none;">
+                            <ul>
+                                <li class="edit"><a href="#"><span>Edit</span></a></li>
+                                <li class="delete"><a href="#"><span>Delete</span></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section><h2>About Mobi Stickies</h2>
+                <section class="area">
+                    <p>v1.0 by Brendan Kowitz</p>
+                    <p>An HTML5 touch sticky notes app.</p>
+                </section>
+            </section>
+        </div>
+        <button onclick="stickManager.makeSticky({ content: 'New Sticky' });">Create</button>
+    </div>
+    
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.metro.js"></script>
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/reveal.js"></script>
+    <script type="text/javascript" src="js/StickyNote.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    
+</body>
+</html>

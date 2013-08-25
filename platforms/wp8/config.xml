@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget>
+    <access origin="*" />
+    <feature name="NativeAppBarCommand">
+        <param name="wp-package" value="NativeAppBarCommand" />
+    </feature>
+    <feature name="Console">
+        <param name="wp-package" value="DebugConsole" />
+    </feature>
+</widget>
